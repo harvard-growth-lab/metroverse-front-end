@@ -25,7 +25,7 @@ import {
 
 const Root = styled.div`
   width: 100%;
-  height: 100%;
+  max-height: 100%;
   box-sizing: border-box;
   grid-column: 1;
   grid-row: 2;
@@ -40,7 +40,6 @@ const Root = styled.div`
 const MapContainer = styled.div`
   position: relative;
   width: 100%;
-  height: 100%;
 
   .mapboxgl-control-container {
     .mapboxgl-ctrl-group:not(:empty) {
