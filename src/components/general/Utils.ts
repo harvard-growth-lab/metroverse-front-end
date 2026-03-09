@@ -113,14 +113,11 @@ export const getNewDataQualityLevel = (
   let assignedNewDataQualityLevel: any;
   if (dataFlag === DataFlagType.GREEN) {
     assignedNewDataQualityLevel = NewDataQualityLevel.HIGH;
-  } else if (
-    dataFlag === DataFlagType.YELLOW ||
-    dataFlag === DataFlagType.ORANGE
-  ) {
+  } else if (dataFlag === DataFlagType.YELLOW) {
     assignedNewDataQualityLevel = NewDataQualityLevel.MEDIUM;
-  } else if (dataFlag === DataFlagType.RED) {
+  } else if (dataFlag === DataFlagType.ORANGE) {
     assignedNewDataQualityLevel = NewDataQualityLevel.LOW;
   }
-
+  // note that data flag type ORANGE shows up as red in the UI. Data flag type RED is not currently used in the database.
   return assignedNewDataQualityLevel;
 };
