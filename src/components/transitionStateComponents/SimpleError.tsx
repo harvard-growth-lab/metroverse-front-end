@@ -1,6 +1,6 @@
 import React from "react";
 import useFluent from "../../hooks/useFluent";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 
 const Root = styled.div`
   font-style: italic;

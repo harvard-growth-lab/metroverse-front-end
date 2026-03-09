@@ -1,7 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
-import styled from "styled-components/macro";
-import raw from "raw.macro";
+import styled from "styled-components";
+import expandIconSvg from "../../../assets/icons/expand.svg?raw";
+import collapseIconSvg from "../../../assets/icons/collapse.svg?raw";
+import downloadImageIconSvg from "../../../assets/icons/image-download.svg?raw";
+import downloadDataIconSvg from "../../../assets/icons/download.svg?raw";
 import useFluent from "../../../hooks/useFluent";
 import { useWindowWidth } from "../../../contextProviders/appContext";
 import DataDisclaimer from "../../general/dataDisclaimer";
@@ -18,11 +21,6 @@ import screenfull from "screenfull";
 import Tooltip, { TooltipPosition } from "../../general/Tooltip";
 import Guide from "./guide";
 import Share from "./share";
-
-const expandIconSvg = raw("../../../assets/icons/expand.svg");
-const collapseIconSvg = raw("../../../assets/icons/collapse.svg");
-const downloadImageIconSvg = raw("../../../assets/icons/image-download.svg");
-const downloadDataIconSvg = raw("../../../assets/icons/download.svg");
 
 const UtilityBarRoot = styled.div`
   display: flex;

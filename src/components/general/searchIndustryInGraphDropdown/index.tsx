@@ -18,7 +18,7 @@ import {
 } from "../Utils";
 import useFluent from "../../../hooks/useFluent";
 import { useWindowSize } from "react-use";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import ToggleDropdown from "./ToggleDropdown";
 import { ClusterLevel } from "../../../routing/routes";
 import { joyrideClassNames } from "../../navigation/secondaryHeader/guide/CitiesGuide";

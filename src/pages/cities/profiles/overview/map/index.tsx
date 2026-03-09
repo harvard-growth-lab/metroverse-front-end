@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { useGlobalLocationGeometry } from "../../../../landing";
 import useCurrentCityId from "../../../../../hooks/useCurrentCityId";
 import CityMap, { BoundsConfig } from "./CityMap";

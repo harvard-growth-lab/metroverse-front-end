@@ -1,6 +1,6 @@
 import debounce from "lodash/debounce";
 import React, { useEffect, useRef } from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { lightBaseColor, primaryFont } from "../../../styling/styleUtils";
 
 const SearchContainer = styled.label`

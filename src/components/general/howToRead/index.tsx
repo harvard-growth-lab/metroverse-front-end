@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { textClassName, ExpandingButton } from "../Utils";
-import raw from "raw.macro";
+import readThisChartIconSVG from "../../../assets/icons/read-this-chart.svg?raw";
 import useFluent from "../../../hooks/useFluent";
 import { joyrideClassNames } from "../../navigation/secondaryHeader/guide/CitiesGuide";
 import { useRouteMatch } from "react-router-dom";
 import { Routes } from "../../../routing/routes";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import { baseColor, secondaryFont } from "../../../styling/styleUtils";
 import Modal from "../../standardModal";
 import TreemapPNG from "./static/treemap.png";
@@ -68,8 +68,6 @@ const CloseButton = styled.button`
   right: 0;
   top: 0;
 `;
-
-const readThisChartIconSVG = raw("../../../assets/icons/read-this-chart.svg");
 
 const HowToRead = () => {
   const getString = useFluent();

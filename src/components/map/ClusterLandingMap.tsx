@@ -3,8 +3,8 @@ import React from "react";
 import SettingsComponent, { Settings } from "./ClusterMapSettingsComponent";
 import { Coordinate } from "./Utils";
 
-const accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
-  ? process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
+const accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
+  ? import.meta.env.VITE_MAPBOX_ACCESS_TOKEN
   : "";
 
 const Mapbox = ReactMapboxGl({

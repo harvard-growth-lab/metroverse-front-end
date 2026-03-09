@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import Tooltip, { TooltipTheme } from "../../components/general/Tooltip";
 import { secondaryFont, baseColor } from "../styleUtils";
 import useFluent from "../../hooks/useFluent";

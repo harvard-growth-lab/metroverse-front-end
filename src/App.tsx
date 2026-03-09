@@ -15,10 +15,10 @@ import ReactGA from "react-ga4";
 import TrackedRoute from "./routing/TrackedRoute";
 import SurveyWidget from "./components/analytics/SurveyWidget";
 
-if (process.env.REACT_APP_GOOGLE_ANALYTICS_GA4_ID) {
+if (import.meta.env.VITE_GOOGLE_ANALYTICS_GA4_ID) {
   ReactGA.initialize([
     {
-      trackingId: process.env.REACT_APP_GOOGLE_ANALYTICS_GA4_ID,
+      trackingId: import.meta.env.VITE_GOOGLE_ANALYTICS_GA4_ID,
     },
   ]);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tooltip, { TooltipPosition } from "../../../general/Tooltip";
-import raw from "raw.macro";
+import guideIconSvg from "../../../../assets/icons/guide.svg?raw";
 import { useWindowWidth } from "../../../../contextProviders/appContext";
 import {
   UtilityBarButtonBase,
@@ -12,8 +12,6 @@ import {
 } from "../../Utils";
 import useFluent from "../../../../hooks/useFluent";
 import CitiesGuide, { joyrideClassNames } from "./CitiesGuide";
-
-const guideIconSvg = raw("../../../../assets/icons/guide.svg");
 
 const Guide = () => {
   const windowDimensions = useWindowWidth();

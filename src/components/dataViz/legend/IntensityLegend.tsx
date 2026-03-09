@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import { intensityColorRange } from "../../../styling/styleUtils";
 import useFluent from "../../../hooks/useFluent";

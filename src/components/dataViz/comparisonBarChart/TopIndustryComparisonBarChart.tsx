@@ -14,7 +14,7 @@ import PreChartRow, {
   VizNavItem,
 } from "../../../components/general/PreChartRow";
 import ErrorBoundary from "../ErrorBoundary";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   clusterColorMap,
   educationColorRange,

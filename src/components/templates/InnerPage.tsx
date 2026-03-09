@@ -3,7 +3,7 @@ import Header from "../navigation/header";
 import SecondaryHeader from "../navigation/secondaryHeader";
 import SideNavigation, { Props as NavProps } from "../navigation/sideNav";
 import { Root as RootBase, ContentContainer } from "../../styling/GlobalGrid";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 
 const Root = styled(RootBase)`
   pointer-events: none;

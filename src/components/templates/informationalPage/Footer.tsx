@@ -1,6 +1,6 @@
 import React from "react";
 import { primaryFont } from "../../../styling/styleUtils";
-import styled, { css } from "styled-components/macro";
+import styled, { css } from "styled-components";
 import GrowthLabLogoPNG from "../../../assets/branding/growth-lab-dark.png";
 import CityverseLogoSVG from "../../../assets/icons/cities-logo-dark.svg";
 import FacebookIconSVG from "./assets/facebook.svg";
@@ -287,7 +287,7 @@ const StandardFooter = () => {
             </Link>
             <Subtitle>The Growth Lab's Urban Economy Navigator</Subtitle>
             <CityverseVersion>
-              Version {process.env.REACT_APP_METROVERSE_VERSION}
+              Version {import.meta.env.VITE_METROVERSE_VERSION}
             </CityverseVersion>
           </CityverseLogoColumn>
           <InternalLinksColumn>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tooltip, { TooltipPosition } from "../../../general/Tooltip";
-import raw from "raw.macro";
+import shareIconSvg from "../../../../assets/icons/share.svg?raw";
 import { useWindowWidth } from "../../../../contextProviders/appContext";
 import {
   UtilityBarButtonBase,
@@ -12,8 +12,6 @@ import {
 } from "../../Utils";
 import useFluent from "../../../../hooks/useFluent";
 import ShareModal from "./ShareModal";
-
-const shareIconSvg = raw("../../../../assets/icons/share.svg");
 
 const Share = () => {
   const windowDimensions = useWindowWidth();

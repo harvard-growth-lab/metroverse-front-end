@@ -11,7 +11,7 @@ import { usePrevious } from "react-use";
 import TreeMap, { transformData, Inputs } from "react-canvas-treemap";
 import { clusterColorMap } from "../../../styling/styleUtils";
 import { useWindowWidth } from "../../../contextProviders/appContext";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import noop from "lodash/noop";
 import SimpleError from "../../../components/transitionStateComponents/SimpleError";
 import LoadingBlock, {

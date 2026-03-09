@@ -11,7 +11,7 @@ import { breakPoints } from "../../../styling/GlobalGrid";
 import { baseColor } from "../../../styling/styleUtils";
 import PreChartRow from "../../../components/general/PreChartRow";
 import ErrorBoundary from "../ErrorBoundary";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import SimpleError from "../../transitionStateComponents/SimpleError";
 import LoadingBlock, {
   LoadingOverlay,

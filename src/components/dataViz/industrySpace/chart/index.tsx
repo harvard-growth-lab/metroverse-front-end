@@ -8,7 +8,7 @@ import createChart, {
 } from "./createChart";
 import useLayoutData from "./useLayoutData";
 import useRCAData, { SuccessResponse } from "./useRCAData";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   primaryFont,
   ButtonBase,

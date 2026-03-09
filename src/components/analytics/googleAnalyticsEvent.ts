@@ -6,8 +6,8 @@ const googleAnalyticsEvent = (
   label: string,
 ) => {
   if (
-    process.env.NODE_ENV === "production" &&
-    process.env.REACT_APP_GOOGLE_ANALYTICS_GA4_ID
+    import.meta.env.MODE === "production" &&
+    import.meta.env.VITE_GOOGLE_ANALYTICS_GA4_ID
   ) {
     // See: https://developers.google.com/analytics/devguides/collection/gtagjs/events
     // See: https://www.npmjs.com/package/react-ga4

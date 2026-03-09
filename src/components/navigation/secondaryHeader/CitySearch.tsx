@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { lightBaseColor } from "../../../styling/styleUtils";
 import matchingKeywordFormatter from "../../../styling/utils/panelSearchKeywordFormatter";
 import PanelSearch, { Datum } from "react-panel-search";

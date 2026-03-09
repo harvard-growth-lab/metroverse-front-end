@@ -11,7 +11,7 @@ import {
   lightBaseColor,
   baseColor,
 } from "../../../styling/styleUtils";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import Footer from "./Footer";
 
 export const rootId = "infromational-page-root-scroll-id";

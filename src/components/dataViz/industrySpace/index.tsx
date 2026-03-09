@@ -4,7 +4,7 @@ import {
   CompositionType,
 } from "../../../types/graphQL/graphQLTypes";
 import { useWindowWidth } from "../../../contextProviders/appContext";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import PreChartRow from "../../../components/general/PreChartRow";
 import Chart from "./chart";

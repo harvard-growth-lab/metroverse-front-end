@@ -12,7 +12,7 @@ import {
   lightBorderColor,
   backgroundDark,
 } from "../../../styling/styleUtils";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { Link, useHistory, matchPath } from "react-router-dom";
 import AppContext from "../../../contextProviders/appContext";
 import MobileMenu from "./MobileMenu";

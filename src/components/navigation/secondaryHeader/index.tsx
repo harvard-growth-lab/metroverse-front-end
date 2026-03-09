@@ -1,6 +1,6 @@
 import React from "react";
 import { SecondaryHeaderContainer } from "../../../styling/GlobalGrid";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   backgroundMedium,
   defaultPadding,

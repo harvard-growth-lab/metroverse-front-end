@@ -1,12 +1,10 @@
 import React from "react";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import Label, { CategoryDatum } from "./Label";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import { backgroundMedium, baseColor } from "../../../styling/styleUtils";
-import raw from "raw.macro";
+import ReloadImgSrc from "../../../assets/icons/reload.svg?raw";
 import { joyrideClassNames } from "../../navigation/secondaryHeader/guide/CitiesGuide";
-
-const ReloadImgSrc = raw("../../../assets/icons/reload.svg");
 
 const RootBase = styled.div`
   grid-row: 3;

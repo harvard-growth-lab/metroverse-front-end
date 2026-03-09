@@ -2,11 +2,9 @@ import React from "react";
 import { Props } from "../sideNav";
 import { Link, useHistory, matchPath } from "react-router-dom";
 import { PageArrowsContainer, breakPoints } from "../../../styling/GlobalGrid";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { baseColor } from "../../../styling/styleUtils";
-import raw from "raw.macro";
-
-const ChevronSVG = raw("../../../assets/icons/chevron.svg");
+import ChevronSVG from "../../../assets/icons/chevron.svg?raw";
 
 const Root = styled(PageArrowsContainer)`
   display: flex;

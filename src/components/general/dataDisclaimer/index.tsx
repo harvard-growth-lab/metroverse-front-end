@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import {
   UtilityBarButtonBase,
   mediumSmallBreakpoint,
@@ -8,7 +8,7 @@ import {
   Text,
   TooltipContent,
 } from "../../navigation/Utils";
-import raw from "raw.macro";
+import dataIconSvg from "../../../assets/icons/disclaimer.svg?raw";
 import {
   baseColor,
   secondaryFont,
@@ -27,8 +27,6 @@ import {
   getNewDataQualityLevel,
   NewDataQualityLevel,
 } from "../Utils";
-
-const dataIconSvg = raw("../../../assets/icons/disclaimer.svg");
 
 const DisclaimerSvg = styled(SvgBase)<{ $flagColor: string }>`
   width: 1.2rem;

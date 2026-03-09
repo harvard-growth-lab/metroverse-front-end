@@ -14,7 +14,7 @@ import {
   defaultCompositionType,
 } from "../../../../../types/graphQL/graphQLTypes";
 import CategoryLabels from "../../../../../components/dataViz/legend/CategoryLabels";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import useGlobalLocationData from "../../../../../hooks/useGlobalLocationData";
 import useSectorMap from "../../../../../hooks/useSectorMap";
 import useClusterMap from "../../../../../hooks/useClusterMap";

@@ -4,7 +4,7 @@ import SimpleError from "../../../../../components/transitionStateComponents/Sim
 import useLayoutData from "../../../../../components/dataViz/industrySpace/chart/useLayoutData";
 import { useGlobalIndustryMap } from "../../../../../hooks/useGlobalIndustriesData";
 import useFluent from "../../../../../hooks/useFluent";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   lightBorderColor,
   lightBaseColor,

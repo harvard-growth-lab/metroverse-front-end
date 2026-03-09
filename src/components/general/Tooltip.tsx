@@ -3,9 +3,7 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 import { lightBorderColor, backgroundDark } from "../../styling/styleUtils";
 import { overlayPortalContainerId } from "../standardModal";
-import raw from "raw.macro";
-
-const infoCircleSVG = raw("../../assets/icons/info-circle.svg");
+import infoCircleSVG from "../../assets/icons/info-circle.svg?raw";
 
 export enum TooltipPosition {
   Automatic = "automatic",

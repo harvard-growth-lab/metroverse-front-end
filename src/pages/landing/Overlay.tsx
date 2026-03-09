@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { rgba } from "polished";
 import {
   secondaryFont,
@@ -364,7 +364,7 @@ const Overlay = ({ onCitySelect }: Props) => {
         />
       </Content>
       <CityverseVersion>
-        VERSION {process.env.REACT_APP_METROVERSE_VERSION}
+        VERSION {import.meta.env.VITE_METROVERSE_VERSION}
       </CityverseVersion>
     </Root>
   );

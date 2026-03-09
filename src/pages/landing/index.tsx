@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import ClusterMap from "../../components/map/ClusterLandingMap";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { Layer, Feature, GeoJSONLayer } from "react-mapbox-gl";
 import {
   clusterSourceLayerId,

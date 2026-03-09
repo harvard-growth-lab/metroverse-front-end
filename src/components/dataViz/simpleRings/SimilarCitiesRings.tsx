@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useWindowWidth } from "../../../contextProviders/appContext";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import Chart from "./Chart";
 import useProximityData from "../similarCitiesMap/useProximityData";
 import useCurrentCityId from "../../../hooks/useCurrentCityId";

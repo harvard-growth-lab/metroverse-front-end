@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Modal from "../../../standardModal";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import {
   backgroundDark,
   primaryColor,

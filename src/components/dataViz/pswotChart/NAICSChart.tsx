@@ -11,7 +11,7 @@ import { usePrevious } from "react-use";
 import { useWindowWidth } from "../../../contextProviders/appContext";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import ErrorBoundary from "../ErrorBoundary";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   sectorColorMap,
   educationColorRange,

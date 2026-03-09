@@ -9,13 +9,12 @@ import { BrowserRouter } from "react-router-dom";
 import * as serviceWorker from "./serviceWorker";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
 import * as Sentry from "@sentry/react";
-import { BrowserTracing } from "@sentry/tracing";
 
-if (process.env.SENTRY_DSN && process.env.SENTRY_ENV) {
+if (import.meta.env.VITE_SENTRY_DSN && import.meta.env.VITE_SENTRY_ENV) {
   Sentry.init({
-    dsn: process.env.SENTRY_DSN,
-    integrations: [new BrowserTracing()],
-    environment: process.env.SENTRY_ENV,
+    dsn: import.meta.env.VITE_SENTRY_DSN,
+    integrations: [new Sentry.BrowserTracing()],
+    environment: import.meta.env.VITE_SENTRY_ENV,
 
     // Set tracesSampleRate to 1.0 to capture 100%
     // of transactions for performance monitoring.
@@ -27,7 +26,7 @@ if (process.env.SENTRY_DSN && process.env.SENTRY_ENV) {
 }
 
 const client = new ApolloClient({
-  uri: process.env.REACT_APP_API_URL,
+  uri: import.meta.env.VITE_API_URL,
   cache: new InMemoryCache(),
 });
 

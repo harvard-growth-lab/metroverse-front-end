@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import PanelSearch, { Datum as SearchDatum } from "react-panel-search";
 import useFluent from "../../../hooks/useFluent";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import {
   textClassName,
   ExpandingButton,
   collapsedSizeMediaQuery,
 } from "../Utils";
-import raw from "raw.macro";
-
-const readThisChartIconSVG = raw("../../../assets/icons/magnifying-glass.svg");
+import readThisChartIconSVG from "../../../assets/icons/magnifying-glass.svg?raw";
 
 const Root = styled.div`
   position: relative;

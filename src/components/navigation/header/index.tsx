@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { PrimaryHeaderContainer } from "../../../styling/GlobalGrid";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   secondaryFont,
   primaryColor,
   backgroundDark,
   defaultPadding,
 } from "../../../styling/styleUtils";
-import raw from "raw.macro";
+import citiesLogoSVGRaw from "../../../assets/icons/cities-logo.svg?raw";
+import cityIconSVGRaw from "../../../assets/icons/city-icon.svg?raw";
 import { Link, useRouteMatch } from "react-router-dom";
 import { Routes } from "../../../routing/routes";
 import { createRoute } from "../../../routing/Utils";
@@ -15,8 +16,8 @@ import useFluent from "../../../hooks/useFluent";
 import useCurrentCityId from "../../../hooks/useCurrentCityId";
 import { useWindowWidth } from "../../../contextProviders/appContext";
 
-export const citiesLogoSVG = raw("../../../assets/icons/cities-logo.svg");
-export const cityIconSVG = raw("../../../assets/icons/city-icon.svg");
+export const citiesLogoSVG = citiesLogoSVGRaw;
+export const cityIconSVG = cityIconSVGRaw;
 
 const Root = styled(PrimaryHeaderContainer)`
   font-family: ${secondaryFont};

@@ -1,28 +1,20 @@
 import React, { useState } from "react";
 import Modal from "../../../standardModal";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import {
   baseColor,
   secondaryFont,
   primaryFont,
 } from "../../../../styling/styleUtils";
 // import useFluent from '../../../../hooks/useFluent';
-import raw from "raw.macro";
+import linkSvg from "../../../templates/informationalPage/assets/link.svg?raw";
+import twitterSvg from "../../../templates/informationalPage/assets/twitter.svg?raw";
+import linkedinSvg from "../../../templates/informationalPage/assets/linkedin.svg?raw";
+import facebookSvg from "../../../templates/informationalPage/assets/facebook.svg?raw";
+import emailSvg from "../../../templates/informationalPage/assets/email.svg?raw";
 import getShareFunctions from "./shareFn";
 
 const iconGray = "#2D363F";
-
-const linkSvg = raw("../../../templates/informationalPage/assets/link.svg");
-const twitterSvg = raw(
-  "../../../templates/informationalPage/assets/twitter.svg",
-);
-const linkedinSvg = raw(
-  "../../../templates/informationalPage/assets/linkedin.svg",
-);
-const facebookSvg = raw(
-  "../../../templates/informationalPage/assets/facebook.svg",
-);
-const emailSvg = raw("../../../templates/informationalPage/assets/email.svg");
 
 const growIn = keyframes`
   0% {

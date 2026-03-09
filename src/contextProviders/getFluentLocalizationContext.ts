@@ -1,6 +1,6 @@
 import { ReactLocalization } from "fluent-react/compat";
 import { FluentBundle } from "fluent/compat";
-import raw from "raw.macro";
+import messagesFtl from "./messages.ftl?raw";
 import { createContext } from "react";
 
 export const POSSESSIVE = ([word]: [string]): string => {
@@ -53,6 +53,6 @@ const getLocalizationInfo = (messages: string) => {
 const {
   localizationAndBundle: appLocalizationAndBundle,
   LocalizationAndBundleContext: AppLocalizationAndBundleContext,
-} = getLocalizationInfo(raw("./messages.ftl"));
+} = getLocalizationInfo(messagesFtl);
 
 export { appLocalizationAndBundle, AppLocalizationAndBundleContext };

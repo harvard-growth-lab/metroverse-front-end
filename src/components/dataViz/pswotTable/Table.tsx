@@ -5,13 +5,13 @@ import LoadingBlock, {
   LoadingOverlay,
 } from "../../transitionStateComponents/VizLoadingBlock";
 import ScrollContainer from "react-indiana-drag-scroll";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import TableRow, { RowDatum, highlightedIdName } from "./TableRow";
 import {
   lightBorderColor,
   backgroundMedium,
 } from "../../../styling/styleUtils";
-import raw from "raw.macro";
+import sortArrows from "../../../assets/icons/sort-arrows.svg?raw";
 import orderBy from "lodash/orderBy";
 import ColumnFilterBox from "./ColumnFilterBox";
 import TextFilter from "./TextFilter";
@@ -20,8 +20,6 @@ import useFluent from "../../../hooks/useFluent";
 import useRcaAndDensityOptions, {
   formatNumber,
 } from "./useRcaAndDensityOptions";
-
-const sortArrows = raw("../../../assets/icons/sort-arrows.svg");
 
 const Root = styled.div`
   position: relative;

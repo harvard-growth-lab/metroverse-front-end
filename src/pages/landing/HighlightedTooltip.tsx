@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { ExtendedSearchDatum, StyledPopup, TootltipTitle } from "./Utils";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { CityRoutes } from "../../routing/routes";
 import { createRoute } from "../../routing/Utils";

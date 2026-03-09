@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import { Link, useHistory, matchPath } from "react-router-dom";
 import { Props as BaseProps } from "./";
@@ -8,7 +8,7 @@ import {
   primaryColorLight,
   secondaryFont,
 } from "../../../styling/styleUtils";
-import raw from "raw.macro";
+import ChevronSVG from "../../../assets/icons/chevron.svg?raw";
 import { joyrideClassNames } from "../secondaryHeader/guide/CitiesGuide";
 
 const Root = styled.div`
@@ -42,8 +42,6 @@ const MobileButton = styled.button`
   align-items: center;
   pointer-events: all;
 `;
-
-const ChevronSVG = raw("../../../assets/icons/chevron.svg");
 
 const arrowStyles = `
   margin: 1rem 0.5rem;

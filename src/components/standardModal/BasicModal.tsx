@@ -1,6 +1,6 @@
 import React from "react";
 import Modal, { Props } from "./";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import { backgroundDark, secondaryFont } from "../../styling/styleUtils";
 import useFluent from "../../hooks/useFluent";
 

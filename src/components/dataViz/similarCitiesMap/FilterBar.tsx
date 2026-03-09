@@ -6,7 +6,7 @@ import React, {
   useRef,
 } from "react";
 import { createPortal } from "react-dom";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   primaryColor,
   backgroundDark,

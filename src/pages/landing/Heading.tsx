@@ -1,16 +1,14 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   primaryFont,
   secondaryFont,
   primaryColor,
 } from "../../styling/styleUtils";
-import raw from "raw.macro";
+import mapPanSVG from "../../assets/icons/map-pan.svg?raw";
 import { citiesLogoSVG, cityIconSVG } from "../../components/navigation/header";
 import useFluent from "../../hooks/useFluent";
 import BasicModal from "../../components/standardModal/BasicModal";
-
-const mapPanSVG = raw("../../assets/icons/map-pan.svg");
 
 const Root = styled.div`
   font-family: ${secondaryFont};

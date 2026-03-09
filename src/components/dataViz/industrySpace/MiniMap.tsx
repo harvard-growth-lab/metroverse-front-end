@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { useWindowWidth } from "../../../contextProviders/appContext";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import Chart from "./chart/miniMap";
 
 const Root = styled.div`

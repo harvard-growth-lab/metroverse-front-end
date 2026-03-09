@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import CitySpaceMap from "react-city-space-mapbox";
 import useLayoutData from "./useLayoutData";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import MapOptionsAndSettings from "./MapOptionsAndSettings";
 import { getStandardTooltip } from "../../../utilities/rapidTooltip";
@@ -295,7 +295,7 @@ const SimilarCitiesMap = () => {
         </MapContainer>
       </Root>
       <CitySpaceMap
-        accessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN as string}
+        accessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN as string}
         mapStyle={"mapbox://styles/harvardgrowthlab/ckelvcgh70cg019qgiu39035a"}
         rootRef={rootRef}
         cityGeoJson={data ? data.cityGeoJson : undefined}

@@ -1,6 +1,6 @@
 import React from "react";
 import { backgroundMedium } from "../../styling/styleUtils";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import { rgba } from "polished";
 
 const fadeIn = keyframes`

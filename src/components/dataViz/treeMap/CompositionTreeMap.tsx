@@ -15,7 +15,7 @@ import {
   wageColorRange,
 } from "../../../styling/styleUtils";
 import { useWindowWidth } from "../../../contextProviders/appContext";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import noop from "lodash/noop";
 import SimpleError from "../../transitionStateComponents/SimpleError";
 import LoadingBlock, {

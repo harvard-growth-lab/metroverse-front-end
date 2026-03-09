@@ -7,7 +7,7 @@ import {
   ClassificationNaicsCluster,
 } from "../../../types/graphQL/graphQLTypes";
 import ScrollContainer from "react-indiana-drag-scroll";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import NAICSTable from "./NAICSTable";
 import ClusterTable from "./ClusterTable";
 import { AggregationMode } from "../../../routing/routes";

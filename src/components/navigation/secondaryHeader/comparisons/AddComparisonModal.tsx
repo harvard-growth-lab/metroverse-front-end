@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import BasicModal from "../../../standardModal/BasicModal";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import {
   secondaryFont,
   primaryFont,

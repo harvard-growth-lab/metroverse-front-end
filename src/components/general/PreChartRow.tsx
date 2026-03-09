@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../styling/GlobalGrid";
 import {
   backgroundDark,
@@ -10,7 +10,7 @@ import {
   lightBorderColor,
 } from "../../styling/styleUtils";
 import useFluent from "../../hooks/useFluent";
-import raw from "raw.macro";
+import gearIcon from "../../assets/icons/settings.svg?raw";
 import SearchIndustryInGraph, {
   SearchInGraphOptions,
 } from "./searchIndustryInGraphDropdown";
@@ -20,8 +20,6 @@ import Tooltip, { TooltipTheme, TooltipPosition } from "./Tooltip";
 import { collapsedSizeMediaQuery } from "./Utils";
 import HowToRead from "./howToRead";
 import { joyrideClassNames } from "../navigation/secondaryHeader/guide/CitiesGuide";
-
-const gearIcon = raw("../../assets/icons/settings.svg");
 
 const Root = styled.div<{ $hasIndicator: boolean }>`
   display: contents;

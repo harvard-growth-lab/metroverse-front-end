@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { keyframes } from "styled-components/macro";
+import styled, { keyframes } from "styled-components";
 import { useHistory } from "react-router-dom";
 import queryString from "query-string";
 import useQueryParams from "../../../hooks/useQueryParams";
@@ -33,13 +33,11 @@ import {
   defaultAggregationMode,
   AggregationMode,
 } from "../../../routing/routes";
-import raw from "raw.macro";
+import gearIcon from "../../../assets/icons/settings.svg?raw";
 import Tooltip, { TooltipTheme } from "../../general/Tooltip";
 import upperFirst from "lodash/upperFirst";
 import RCAThresholdSlider from "./RCAThresholdSlider";
 import googleAnalyticsEvent from "../../analytics/googleAnalyticsEvent";
-
-const gearIcon = raw("../../../assets/icons/settings.svg");
 
 const slideIn = keyframes`
   0% {

@@ -1,4 +1,4 @@
-import styled, { keyframes, css } from "styled-components/macro";
+import styled, { keyframes, css } from "styled-components";
 import { breakPoints, breakPointValues } from "./GlobalGrid";
 import { rgba } from "polished";
 

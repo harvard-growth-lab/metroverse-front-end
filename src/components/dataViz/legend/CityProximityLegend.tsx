@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components/macro";
+import styled from "styled-components";
 import { breakPoints } from "../../../styling/GlobalGrid";
 import { proximityColors } from "../similarCitiesMap/Utils";
 import useFluent from "../../../hooks/useFluent";
