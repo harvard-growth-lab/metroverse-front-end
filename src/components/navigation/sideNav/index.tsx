@@ -19,10 +19,12 @@ import MobileMenu from "./MobileMenu";
 import { GlobalQueryParams } from "../../../routing/routes";
 import useQueryParams from "../../../hooks/useQueryParams";
 import queryString from "query-string";
+import { joyrideClassNames } from "../../navigation/secondaryHeader/guide/CitiesGuide";
 
 const collapsibleMenuClassName = "collapsible-side-menu-root";
 
 const Container = styled(NavigationContainer)`
+  background-color: #fff;
   pointer-events: all;
 
   &:hover {
@@ -505,7 +507,9 @@ const SideNavigation = ({
         style={{
           display: mobileMenuOpen ? "block" : undefined,
         }}
-        className={collapsibleMenuClassName}
+        className={
+          collapsibleMenuClassName + " " + joyrideClassNames.questionNavigation
+        }
       >
         {collapseButton}
         <LinkContainer>{links}</LinkContainer>
@@ -528,7 +532,7 @@ const SideNavigation = ({
         </svg>
       </Root>
     ) : (
-      <CollapsedMenu>
+      <CollapsedMenu className={joyrideClassNames.questionNavigation}>
         <ExpandButton onClick={() => setCollapsed(false)}>
           Extend
           <ExtendArrow>{">"}</ExtendArrow>

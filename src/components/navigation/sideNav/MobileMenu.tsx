@@ -9,6 +9,7 @@ import {
   secondaryFont,
 } from "../../../styling/styleUtils";
 import raw from "raw.macro";
+import { joyrideClassNames } from "../secondaryHeader/guide/CitiesGuide";
 
 const Root = styled.div`
   padding-top: 0.75rem;
@@ -179,7 +180,10 @@ const MobileMenu = ({
       <Root>
         {prevLink}
         <MobileButtonContainer>
-          <MobileButton onClick={toggleMenu}>
+          <MobileButton
+            onClick={toggleMenu}
+            className={joyrideClassNames.questionNavigation}
+          >
             {pageTitle}
             {toggleArrow}
           </MobileButton>

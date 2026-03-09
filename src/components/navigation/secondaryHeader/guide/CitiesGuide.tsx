@@ -1,13 +1,17 @@
 import React from "react";
 import Joyride, { CallBackProps, Step } from "react-joyride";
 import styled from "styled-components";
+import { matchPath, useLocation } from "react-router-dom";
 import { primaryColor } from "../../../../styling/styleUtils";
+import { CityRoutes } from "../../../../routing/routes";
 import FirstTimeModal from "./FirstTimeModal";
 
 const Text = styled.div`
   text-align: left;
 `;
 export const joyrideClassNames = {
+  cityDropdown: "joyride-element-city-dropdown",
+  questionNavigation: "joyride-element-question-navigation",
   vizOptions: "joyride-element-viz-options",
   searchInGraph: "joyride-element-search-in-graph",
   searchCountryInGraph: "joyride-element-search-country-in-graph",
@@ -20,6 +24,31 @@ export const joyrideClassNames = {
   colorLegendNoFilter: "joyride-element-color-legend-no-filter",
   guideButton: "joyride-element-guide-button",
 };
+
+const cityOverviewSteps: Step[] = [
+  {
+    target: "." + joyrideClassNames.cityDropdown,
+    content: <Text>Search for a different city by typing its name here.</Text>,
+    disableBeacon: true,
+    placement: "bottom-start",
+  },
+  {
+    target: "." + joyrideClassNames.questionNavigation,
+    content: (
+      <Text>Explore various dynamics of the selected city’s economy.</Text>
+    ),
+    disableBeacon: true,
+    placement: "right-start",
+  },
+  {
+    target: "." + joyrideClassNames.guideButton,
+    content: (
+      <Text>You can find this guide here if you need to see it again.</Text>
+    ),
+    disableBeacon: true,
+    placement: "bottom-start",
+  },
+];
 
 const steps: Step[] = [
   {
@@ -154,6 +183,15 @@ interface Props {
 
 const CitiesGuide = (props: Props) => {
   const { run, onClose, startGuide } = props;
+  const location = useLocation();
+
+  const isCityOverview = !!matchPath<{ cityId: string }>(
+    location.pathname,
+    CityRoutes.CityOverview,
+  );
+
+  const activeSteps = isCityOverview ? cityOverviewSteps : steps;
+
   const onChange = (input: CallBackProps) => {
     const { action } = input;
     if (action === "reset" || action === "close") {
@@ -161,7 +199,7 @@ const CitiesGuide = (props: Props) => {
     }
   };
 
-  const filteredSteps = steps.filter(({ target }) => {
+  const filteredSteps = activeSteps.filter(({ target }) => {
     const element = document.querySelector<HTMLElement>(target as string);
     return element !== null && element.offsetParent !== null;
   });

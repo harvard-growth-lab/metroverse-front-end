@@ -111,6 +111,7 @@ const CitySearch = ({ searchContainerWidth }: Props) => {
     output = (
       <>
         <SearchContainer
+          className="joyride-element-city-dropdown"
           style={
             searchContainerWidth ? { width: searchContainerWidth } : undefined
           }
