@@ -2,6 +2,9 @@
   "name": "cities-atlas-front-end",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=16.14.0"
+  },
   "dependencies": {
     "@apollo/client": "^3.1.4",
     "@khanacademy/react-multi-select": "^0.3.3",
@@ -65,7 +68,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build dist",
+    "build": "rm -rf dist && react-scripts build && mv build dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint:fix": "tslint --project tsconfig.json --config tslint.json --fix",
