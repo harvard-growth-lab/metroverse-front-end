@@ -42,6 +42,8 @@ const DefaultMap = (props: Props) => {
     return <SettingsComponent map={mapEl} {...settings} />;
   };
 
+  mapboxgl.clearStorage();
+
   return (
     <Mapbox
       // eslint-disable-next-line

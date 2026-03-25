@@ -296,7 +296,7 @@ const SimilarCitiesMap = () => {
       </Root>
       <CitySpaceMap
         accessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN as string}
-        mapStyle={"mapbox://styles/harvardgrowthlab/ckelvcgh70cg019qgiu39035a"}
+        mapStyle={"mapbox://styles/harvardgrowthlab/cmn6e3pso008101qt7ris5o8v"}
         rootRef={rootRef}
         cityGeoJson={data ? data.cityGeoJson : undefined}
         cityUMapJson={data ? data.cityUMapJson : undefined}
