@@ -9,6 +9,7 @@ import { CityNodeSizing, defaultCityNodeSizing } from "../../../routing/routes";
 import { scaleLinear } from "d3-scale";
 import { extent } from "d3-array";
 import mapboxgl from "mapbox-gl";
+import { applyWesternSaharaFilter } from "../../map/Utils";
 
 let previousCityId: string | undefined;
 
@@ -25,6 +26,7 @@ const MapOptionsAndSettings = () => {
     if (mapContext.intialized) {
       mapContext.map.addControl(new mapboxgl.NavigationControl());
       mapContext.map.scrollZoom.disable();
+      applyWesternSaharaFilter(mapContext.map);
     }
   }, [mapContext]);
 

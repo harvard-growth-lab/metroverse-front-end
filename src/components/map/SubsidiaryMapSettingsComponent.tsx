@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { applyWesternSaharaFilter } from "./Utils";
 
 export interface Settings {
   mapCallback?: (map: any) => void;
@@ -14,6 +15,8 @@ const MapSettingsComponent = (props: Props) => {
   const [haveSettingsBeenSet, setSettings] = useState<boolean>(false);
 
   if (map && haveSettingsBeenSet === false) {
+    applyWesternSaharaFilter(map);
+
     if (mapCallback !== undefined) {
       mapCallback(map);
     }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { clusterSourceLayerId, togglePointer } from "./Utils";
+import { clusterSourceLayerId, togglePointer, applyWesternSaharaFilter } from "./Utils";
 
 export interface Settings {
   mapCallback?: (map: any) => void;
@@ -89,6 +89,8 @@ const MapSettingsComponent = (props: Props) => {
     map.on("click", "unclustered_point", unclusteredPointClick);
     map.on("mouseenter", "cluster_count", setCursor);
     map.on("mouseleave", "cluster_count", resetCursor);
+
+    applyWesternSaharaFilter(map);
 
     if (mapCallback !== undefined) {
       mapCallback(map);
